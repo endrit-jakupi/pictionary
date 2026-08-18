@@ -1,12 +1,14 @@
-# Gesture Drawing Application
+# Multimodal Pictionary
 
-A voice‑ and gesture‑controlled drawing program that turns your webcam into a *brush*.
-It combines **MediaPipe** hand‑tracking, **OpenCV** video capture, **SpeechRecognition** for
-voice commands, and a **Tkinter** canvas for rendering.
+## About
+
+Multimodal Pictionary is a collaborative drawing game that uses voice and hand tracking instead of a mouse and keyboard. Players on devices on the same network share one canvas: one person draws a hidden prompt with their fingertip while everyone else watches and speaks their guesses. Only one player draws at a time, turning natural gestures and speech into a playful, network-synced Pictionary experience.
+
+Built with **MediaPipe** hand tracking, **OpenCV** video capture, **SpeechRecognition** for voice commands, and a **Tkinter** canvas for rendering.
 
 ---
 
-## ✨ Features
+## Features
 
 * Draw with 7 different brushes (solid, air, texture, calligraphy, blending, shining, eraser)
 * Voice commands for starting/stopping, changing colours, switching brushes, and drawing
@@ -15,14 +17,15 @@ voice commands, and a **Tkinter** canvas for rendering.
 
 ---
 
-## 📦 Installation
+## Installation
 
+### 1. Clone the repo
 ```bash
-# 1. Clone the repo
 $ git clone https://github.com/your‑user/drawing‑app.git
 $ cd drawing‑app
-
-# 2. Install Python dependencies
+```
+### 2. Install Python dependencies
+```bash
 $ pip install -r requirements.txt
 ```
 
@@ -38,7 +41,7 @@ $ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the App
+## Running the App
 
 ```bash
 # Run without LLM
@@ -53,7 +56,7 @@ Make sure **one** webcam is connected; the first camera in the device list is us
 
 ---
 
-## 🎤 Voice Command Cheatsheet
+## Voice Command Cheatsheet
 
 | Command                                                                     | Action                                                  |
 | --------------------------------------------------------------------------- | ------------------------------------------------------- |
@@ -64,3 +67,12 @@ Make sure **one** webcam is connected; the first camera in the device list is us
 | **MY GUESS IS \<word>**                                                     | Guess the current prompt in the mini‑game               |
 
 Unrecognised brush types trigger a friendly message instead of crashing.
+
+## Contributors
+
+A collaborative project by:
+
+- Bastien Jossen
+- Deva Ucar
+- Endrit Jakupi
+- Richmond Djwerter
